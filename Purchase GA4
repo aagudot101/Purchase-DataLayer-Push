@@ -1,0 +1,32 @@
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'purchase',
+  ecommerce: {
+    currency: 'EUR',
+    value: 109.29, // order total (+ taxes but without shipping)
+    tax: 7.18, 
+    shipping: 10.00,
+    affiliation: 'affiliate123', // ID of the affiliate
+    transaction_id: 'abc123',
+    coupon: 'SUMMER2020',
+    items: [{
+      item_name: 'Product A',
+      item_id: 'pra123',
+      price: '31.10',
+      item_brand: 'Brand A',
+      item_category: 'Apparel',
+      item_variant: 'blue',
+      quantity: '3'
+    },{
+      item_name: 'Product B',
+      item_id: 'prb222',
+      price: '5.99',
+      item_brand: 'Brand A',
+      item_category: 'Apparel',
+      quantity: '1',
+      item_coupon: 'discount20'
+    }]
+  }
+});
+</script>
